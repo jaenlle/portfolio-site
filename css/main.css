@@ -157,7 +157,7 @@ footer {
 
 footer ul {
     list-style: none;
-    width: 210px;
+    width: 208px;
     margin: 0 auto;
     padding-left: 0;
 }
@@ -183,7 +183,7 @@ footer ul img:hover {
 ---------------------------------------------------------------- */
 
 #subfooter {
-    margin-top: 50px;
+    margin-top: 35px;
     text-align: center;
 }
 
@@ -212,6 +212,88 @@ footer ul img:hover {
 /* --------------------------------------------------------------
 >>> CV Page
 ---------------------------------------------------------------- */
+
+#cv {
+    padding: 10px 70px;
+    margin-bottom: 35px;
+}
+
+#cv article {
+    display: block;
+    margin-bottom: 40px;
+}
+
+#cv section {
+    margin-bottom: 40px;
+}
+
+#cv a {
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.cv-content,
+.co,
+.skills {
+    float: left;
+}
+
+.cv-content h3,
+.cv-content p {
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+
+.co {
+    width: 90px;
+    margin-right: 25px;
+}
+
+.job-description {
+    margin-top: 20px;
+}
+
+.skills {
+    height: 65px;
+    margin: 15px 15px 0 0;
+}
+
+@media all and (max-width: 500px) {
+
+    .cv-content p {
+        font-size: 0.92em;
+    }
+
+    .job-description {
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 501px) {
+
+    #cv article {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    #cv section {
+        margin-bottom: 50px;
+    }
+
+    .cv-content,
+    .co,
+    .skills {
+        float: left;
+    }
+
+    .co {
+        width: 90px;
+        margin-right: 25px;
+    }
+
+}
 
 /* --------------------------------------------------------------
 >>> Contact Page
@@ -249,4 +331,9 @@ footer ul img:hover {
     .email-responsive {
         display: none;
     }
+}
+
+.relocate {
+    font-size: 0.9em !important;
+    font-weight: normal !important;
 }
