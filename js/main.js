@@ -4,11 +4,10 @@ $(document).ready(function () {
         $('#menu').slicknav({
             label: '',
             duration: 600,
-            prependTo: '#container',
+            prependTo: 'header',
         });
 
-        /* $('.slicknav_menu').prepend('<img class="responsive-logo" src="images/iwf-logo.png" title="IWF Construction & Glazing" alt="South Florida construction and glazing services" /></a>');*/
+        $('.slicknav_menu').prepend('<a href src="/index.html"><img class="responsive-logo" src="../img/mylogo-grey.png" title="" /></a>');
     });
-
 
 });
