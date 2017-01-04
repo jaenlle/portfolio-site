@@ -1,6 +1,12 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Helvetica', sans-serif;
     background-color: rgb(247, 247, 247);
+    position: relative;
 }
 
 h1,
@@ -35,6 +41,18 @@ main {
     margin: 0 auto;
 }
 
+#work,
+#project,
+#cv,
+#contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cv,
+#contact {
+    padding: 0 20px;
+}
 
 /* --------------------------------------------------------------
 >>> Header
@@ -48,6 +66,8 @@ header {
 }
 
 .head { /* header image of yours truly */
+    position: relative;
+    top: 2px;
     width: 145px;
     padding: 4px;
     border: 6px solid rgb(255, 182, 54);
@@ -148,6 +168,7 @@ header {
 
 footer {
     clear: both;
+    margin-top: 60px;
 }
 
 /* footer img {
@@ -157,14 +178,14 @@ footer {
 
 footer ul {
     list-style: none;
-    width: 208px;
+    width: 246px;
     margin: 0 auto;
     padding-left: 0;
 }
 
 footer li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 4px;
 }
 
 footer ul img {
@@ -201,12 +222,162 @@ footer ul img:hover {
 
 #work {
     text-align: center;
+    margin-bottom: 60px;
+}
+
+#work p {
+    padding: 0 45px;
+}
+
+#work h1 {
+    font-size: 2.6em;
+    margin: 10px;
 }
 
 #work h2 {
+    font-size: 1.2em;
     display: inline-block;
+    padding: 2px 0;
+    /* border-bottom: 4px solid rgba(197, 197, 197, 0.5); */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media all and (min-width: 400px) {
+    #work h2 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media all and (min-width: 530px) {
+    #work h2 {
+        font-size: 1.8em;
+    }
+}
+
+p.about.mobile {
+    margin-bottom: 45px;
+}
+
+/* --------------------------------------------------------------
+>>> Work Grid
+---------------------------------------------------------------- */
+
+ul#grid {
+    list-style: none;
+    padding-left: 0;
+}
+
+#grid li {
+    display: inline-block;
+    margin: 0 10px 25px;
+    padding: 12px;
+}
+
+#grid li:hover {
+    padding: 6px;
+    border: 6px solid rgb(255, 182, 54);
+}
+
+#grid img {
+    width: 200px;
+    border: 1px solid rgba(197, 197, 197, 0.5);
+}
+
+/* --------------------------------------------------------------
+>>> Project Page
+---------------------------------------------------------------- */
+
+#project {
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+#project h1 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#project h2 {
+    margin-bottom: 5px;
+}
+
+#project img {
+    border: 1px solid rgba(197, 197, 197, 0.5);
+}
+
+#project img,
+.project-content {
+    float: left;
+}
+
+.project-content {
+    max-width: 545px;
+}
+
+@media all and (max-width: 650px) {
+    #project img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 651px) {
+    #project img {
+        width: 350px;
+        margin-right: 25px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    #project {
+        margin-bottom: 100px;
+    }
+
+    .project-content p {
+        line-height: 1.2em;
+        margin-top: 5px;
+    }
+
+}
+
+ul#tech {
+    height: 64px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#tech li {
+    display: inline-block;
+}
+
+#tech li img {
+    width: 45px;
+    height: 100%;
+    margin: 15px 15px 0 0;
+    border: none;
+}
+
+#project a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
     padding: 4px 0;
+}
+
+#project a:hover {
     border-bottom: 6px solid rgb(255, 182, 54);
+}
+
+.project-content {
+    float: left;
 }
 
 /* --------------------------------------------------------------
@@ -214,7 +385,6 @@ footer ul img:hover {
 ---------------------------------------------------------------- */
 
 #cv {
-    padding: 10px 70px;
     margin-bottom: 35px;
 }
 
@@ -223,14 +393,30 @@ footer ul img:hover {
     margin-bottom: 40px;
 }
 
+#cv h2 {
+    display: inline-block;
+    padding: 2px 0;
+    border-bottom: 4px solid rgba(197, 197, 197, 0.5);
+    margin-bottom: 30px;
+}
+
 #cv section {
     margin-bottom: 40px;
+}
+
+#cv p {
+    line-height: 1.25em;
 }
 
 #cv a {
     text-decoration: none;
     font-size: 0.9em;
     cursor: pointer;
+}
+
+#cv a:hover {
+    text-decoration: underline;
+    color: rgb(255, 182, 54);
 }
 
 .cv-content,
@@ -273,9 +459,8 @@ footer ul img:hover {
 
 @media all and (min-width: 501px) {
 
-    #cv article {
-        display: block;
-        margin-bottom: 80px;
+    #cv {
+        padding: 0 70px;
     }
 
     #cv section {
@@ -295,12 +480,33 @@ footer ul img:hover {
 
 }
 
+ul#misc {
+    list-style: none;
+}
+
+ul#misc li {
+    position: relative;
+    margin-bottom: 12px;
+    letter-spacing: 0.1em;
+}
+
+ul#misc li:first-of-type {
+    margin-top: 25px;
+}
+
+ul#misc li::before {
+    content: url('http://www.julioaenlle.com/img/list-style.png');
+    padding: 0 10px 0 0;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+}
+
 /* --------------------------------------------------------------
 >>> Contact Page
 ---------------------------------------------------------------- */
 
 #contact {
-    padding: 10px 70px;
     margin-bottom: 50px;
 }
 

@@ -7,7 +7,7 @@ $(document).ready(function () {
             prependTo: 'header',
         });
 
-        $('.slicknav_menu').prepend('<a href src="/index.html"><img class="responsive-logo" src="../img/mylogo-grey.png" title="" /></a>');
+        $('.slicknav_menu').prepend('<a href src="/"><img class="responsive-logo" src="../img/mylogo-grey.png" title="" /></a>');
     });
 
 });

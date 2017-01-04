@@ -1,0 +1,213 @@
+/* --------------------------------------------------------------
+>>> Work Page Grid Styling
+---------------------------------------------------------------- */
+
+.grid {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.grid li {
+    display: inline-block;
+    margin: 10px 5px 0 5px;
+    vertical-align: top;
+    height: 250px;
+}
+
+.grid li > a,
+.grid li > a img {
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
+}
+
+.grid li.grid-expanded > a::after {
+    top: auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #dddddd;
+    border-width: 15px;
+    left: 50%;
+    margin: -20px 0 0 -15px;
+}
+
+.grid-expander {
+    position: absolute;
+    background: #dddddd;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+}
+
+.grid-expander-inner {
+    padding: 50px 30px;
+    height: 100%;
+}
+
+/* --------------------------------------------------------------
+>>> Preview Window Close icon
+---------------------------------------------------------------- */
+
+
+.grid-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.grid-close::before,
+.grid-close::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: 1px;
+    background: #888888;
+    transform: rotate(45deg);
+}
+
+.grid-close::after {
+    transform: rotate(-45deg);
+}
+
+.grid-close:hover::before,
+.grid-close:hover::after {
+    background: #333333;
+}
+
+/* --------------------------------------------------------------
+>>> Image & Details Wrappers
+---------------------------------------------------------------- */
+
+.grid-fullimg,
+.grid-details {
+    width: 50%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-details {
+    padding: 0 40px 0 20px;
+}
+
+.grid-fullimg {
+    text-align: center;
+}
+
+.grid-fullimg img {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* --------------------------------------------------------------
+>>> Text Elements
+---------------------------------------------------------------- */
+
+.grid-details h3 {
+    font-weight: 300;
+    font-size: 52px;
+    padding: 40px 0 10px;
+    margin-bottom: 10px;
+}
+
+.grid-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.grid-details a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 3px solid #333333;
+    display: inline-block;
+    margin: 30px 0 0;
+    outline: none;
+}
+
+.grid-details a::before {
+    content: '\2192';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.grid-details a:hover {
+    border-color: #999999;
+    color: #999999;
+}
+
+/* --------------------------------------------------------------
+>>> Text Elements
+---------------------------------------------------------------- */
+
+.grid-loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #dddddd;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    animation: loader 0.5s infinite ease-in-out both;
+}
+
+@keyframes loader {
+    0% {
+        background: #dddddd;
+    }
+    33% {
+        background: #cccccc;
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+    }
+    66% {
+        background: #cccccc;
+        box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+    }
+}
+
+@media all and (max-width: 830px) {
+    .grid-expander h3 {
+        font-size: 32px;
+    }
+    .grid-expander p {
+        font-size: 13px;
+    }
+    .grid-expander a {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .grid-fullimg {
+        display: none;
+    }
+    .grid-details {
+        float: none;
+        width: 100%;
+    }
+}
