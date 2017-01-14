@@ -252,7 +252,22 @@ footer ul img:hover {
 
 @media all and (min-width: 530px) {
     #work h2 {
-        font-size: 1.8em;
+        font-size: 1.4em;
+    }
+}
+
+@media all and (max-width: 674px) {
+    .home-logo {
+        display: none;
+    }
+}
+
+@media all and (min-width: 675px) {
+    .home-logo {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        margin-bottom: 10px;
     }
 }
 
