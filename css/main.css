@@ -543,7 +543,7 @@ ul#misc li:first-of-type {
 }
 
 ul#misc li::before {
-    content: url('http://www.julioaenlle.com/img/list-style.png');
+    content: url('http://www.julioaenlle.com/img/logo/list-style.png');
     padding: 0 10px 0 0;
     position: absolute;
     top: -4px;
