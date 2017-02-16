@@ -75,6 +75,7 @@ header {
 }
 
 @media all and (max-width: 674px) {
+
     nav,
     nav ul,
     nav li,
@@ -166,9 +167,24 @@ header {
 >>> Footer
 ---------------------------------------------------------------- */
 
+@media all and (max-width: 489px) {
+
+    #footer-desktop {
+        display: none;
+    }
+}
+
+@media all and (min-width: 490px) {
+
+    #footer-mobile {
+        display: none;
+    }
+}
+
 footer {
     clear: both;
     margin-top: 60px;
+    text-align: center;
 }
 
 /* footer img {
@@ -178,7 +194,7 @@ footer {
 
 footer ul {
     list-style: none;
-    width: 246px;
+    width: 330px;
     margin: 0 auto;
     padding-left: 0;
 }
@@ -197,6 +213,23 @@ footer ul img {
 footer ul img:hover {
     padding: 3px;
     border: 5px solid rgb(255, 182, 54);
+}
+
+#footer-mobile ul {
+    list-style: none;
+    text-align: center;
+}
+
+#footer-mobile li a {
+    padding: 5px 10px;
+    margin: 8px 8px;
+    text-decoration: none;
+    color: #777777;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
 }
 
 /* --------------------------------------------------------------
