@@ -1,0 +1,125 @@
+
+/* --------------------------------------------------------------
+>>> CV Page
+
+This file contains styling for elemenets that appear on the resume page.
+---------------------------------------------------------------- */
+
+#cv {
+    padding: 10px 20px;
+    margin-bottom: 35px;
+}
+
+#cv article {
+    display: block;
+    margin-bottom: 40px;
+}
+
+#cv h2 {
+    display: inline-block;
+    padding: 2px 0;
+    border-bottom: 4px solid rgba(197, 197, 197, 0.5);
+    margin-bottom: 30px;
+}
+
+#cv section {
+    margin-bottom: 40px;
+}
+
+#cv p {
+    line-height: 1.25em;
+}
+
+#cv a {
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+#cv a:hover {
+    text-decoration: underline;
+    color: rgb(255, 182, 54);
+}
+
+.cv-content,
+.co,
+.skills {
+    float: left;
+}
+
+.cv-content h3,
+.cv-content p {
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+
+.co {
+    width: 90px;
+    margin-right: 25px;
+}
+
+.job-description {
+    margin-top: 20px;
+}
+
+.skills {
+    height: 65px;
+    margin: 15px 15px 0 0;
+}
+
+@media all and (max-width: 500px) {
+
+    .cv-content p {
+        font-size: 0.92em;
+    }
+
+    .job-description {
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 501px) {
+
+    #cv {
+        padding: 0 70px;
+    }
+
+    #cv section {
+        margin-bottom: 50px;
+    }
+
+    .cv-content,
+    .co,
+    .skills {
+        float: left;
+    }
+
+    .co {
+        width: 90px;
+        margin-right: 25px;
+    }
+
+}
+
+ul#misc {
+    list-style: none;
+}
+
+ul#misc li {
+    position: relative;
+    margin-bottom: 12px;
+    letter-spacing: 0.1em;
+}
+
+ul#misc li:first-of-type {
+    margin-top: 25px;
+}
+
+ul#misc li::before {
+    content: url('http://www.julioaenlle.com/img/logo/list-style.png');
+    padding: 0 10px 0 0;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+}

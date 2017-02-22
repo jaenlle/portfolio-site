@@ -1,0 +1,100 @@
+
+/* --------------------------------------------------------------
+>>> Web-Project Page
+
+This file contains styling for elemenets that appear on web + UX design/development project pages.
+---------------------------------------------------------------- */
+
+#project {
+    margin-bottom: 60px;
+    padding: 10px 20px;
+}
+
+#project h1 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#project h2 {
+    margin-bottom: 5px;
+}
+
+#project img {
+    border: 1px solid rgba(197, 197, 197, 0.5);
+}
+
+#project img,
+.project-content {
+    float: left;
+}
+
+.project-content {
+    max-width: 545px;
+}
+
+@media all and (max-width: 650px) {
+
+    #project img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 651px) {
+
+    #project img {
+        width: 350px;
+        margin-right: 25px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    #project {
+        margin-bottom: 100px;
+    }
+
+    .project-content p {
+        line-height: 1.2em;
+        margin-top: 5px;
+    }
+
+}
+
+ul#tech {
+    height: 64px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#tech li {
+    display: inline-block;
+}
+
+#tech li img {
+    width: 45px;
+    height: 100%;
+    margin: 15px 15px 0 0;
+    border: none;
+}
+
+#project a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 4px 0;
+}
+
+#project a:hover {
+    border-bottom: 6px solid rgb(255, 182, 54);
+}
+
+.project-content {
+    float: left;
+}

@@ -1,0 +1,44 @@
+
+/* --------------------------------------------------------------
+>>> Home Page
+
+This file contains styling for elemenets that appear on the homepage.
+---------------------------------------------------------------- */
+
+#home {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#home {
+    text-align: center;
+    margin: 0 33px 400px 33px;
+}
+
+.about {
+    text-align: justify;
+    clear: both;
+}
+
+p.about.mobile {
+    margin-bottom: 45px;
+}
+
+#code,
+#copy {
+    max-width: 483px;
+    display: block;
+    float: left;
+}
+
+#code figure,
+#copy figure {
+    max-width: 400px;
+}
+
+#code figcaption,
+#copy figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+}
