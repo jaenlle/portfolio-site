@@ -1,3 +1,10 @@
+
+/* --------------------------------------------------------------
+>>> Main CSS
+
+This is the main CSS for the site and contains styling for elemenets that appear on every page.
+---------------------------------------------------------------- */
+
 html,
 body {
     overflow-x: hidden;
@@ -16,7 +23,8 @@ h4,
 h5,
 h6,
 p,
-li {
+li,
+figcaption {
     color: #777777;
 }
 
@@ -26,6 +34,10 @@ a {
 
 main {
     clear: both;
+}
+
+ul {
+    list-style: none;
 }
 
 .breaker {
@@ -39,19 +51,6 @@ main {
 #container {
     max-width: 966px;
     margin: 0 auto;
-}
-
-#work,
-#project,
-#cv,
-#contact {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#cv,
-#contact {
-    padding: 0 20px;
 }
 
 /* --------------------------------------------------------------
@@ -243,351 +242,4 @@ footer ul img:hover {
 
 #subfooter p {
     margin-top: 0.4em;
-}
-
-/* --------------------------------------------------------------
->>> Home/Work Page
----------------------------------------------------------------- */
-
-.about {
-    text-align: justify;
-}
-
-#work {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-#work p {
-    padding: 0 45px;
-}
-
-#work h1 {
-    font-size: 2.6em;
-    margin: 10px;
-}
-
-#work h2 {
-    font-size: 1.2em;
-    display: inline-block;
-    padding: 2px 0;
-    /* border-bottom: 4px solid rgba(197, 197, 197, 0.5); */
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-@media all and (min-width: 400px) {
-    #work h2 {
-        font-size: 1.3em;
-    }
-
-}
-
-@media all and (min-width: 530px) {
-    #work h2 {
-        font-size: 1.4em;
-    }
-}
-
-@media all and (max-width: 674px) {
-    .home-logo {
-        display: none;
-    }
-}
-
-@media all and (min-width: 675px) {
-    .home-logo {
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        margin-bottom: 10px;
-    }
-}
-
-p.about.mobile {
-    margin-bottom: 45px;
-}
-
-/* --------------------------------------------------------------
->>> Work Grid
----------------------------------------------------------------- */
-
-ul#grid {
-    list-style: none;
-    padding-left: 0;
-}
-
-#grid li {
-    display: inline-block;
-    margin: 0 10px 25px;
-    padding: 12px;
-}
-
-#grid li:hover {
-    padding: 6px;
-    border: 6px solid rgb(255, 182, 54);
-}
-
-#grid img {
-    width: 200px;
-    border: 1px solid rgba(197, 197, 197, 0.5);
-}
-
-/* --------------------------------------------------------------
->>> Project Page
----------------------------------------------------------------- */
-
-#project {
-    margin-bottom: 60px;
-    padding: 0 20px;
-}
-
-#project h1 {
-    text-align: left;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-#project h2 {
-    margin-bottom: 5px;
-}
-
-#project img {
-    border: 1px solid rgba(197, 197, 197, 0.5);
-}
-
-#project img,
-.project-content {
-    float: left;
-}
-
-.project-content {
-    max-width: 545px;
-}
-
-@media all and (max-width: 650px) {
-    #project img {
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-@media all and (min-width: 651px) {
-    #project img {
-        width: 350px;
-        margin-right: 25px;
-    }
-}
-
-@media all and (min-width: 1000px) {
-    #project {
-        margin-bottom: 100px;
-    }
-
-    .project-content p {
-        line-height: 1.2em;
-        margin-top: 5px;
-    }
-
-}
-
-ul#tech {
-    height: 64px;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-#tech li {
-    display: inline-block;
-}
-
-#tech li img {
-    width: 45px;
-    height: 100%;
-    margin: 15px 15px 0 0;
-    border: none;
-}
-
-#project a {
-    text-decoration: none;
-    color: #777777;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 4px 0;
-}
-
-#project a:hover {
-    border-bottom: 6px solid rgb(255, 182, 54);
-}
-
-.project-content {
-    float: left;
-}
-
-/* --------------------------------------------------------------
->>> CV Page
----------------------------------------------------------------- */
-
-#cv {
-    margin-bottom: 35px;
-}
-
-#cv article {
-    display: block;
-    margin-bottom: 40px;
-}
-
-#cv h2 {
-    display: inline-block;
-    padding: 2px 0;
-    border-bottom: 4px solid rgba(197, 197, 197, 0.5);
-    margin-bottom: 30px;
-}
-
-#cv section {
-    margin-bottom: 40px;
-}
-
-#cv p {
-    line-height: 1.25em;
-}
-
-#cv a {
-    text-decoration: none;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-#cv a:hover {
-    text-decoration: underline;
-    color: rgb(255, 182, 54);
-}
-
-.cv-content,
-.co,
-.skills {
-    float: left;
-}
-
-.cv-content h3,
-.cv-content p {
-    margin: 0.5em 0.5em 0.5em 0;
-}
-
-
-.co {
-    width: 90px;
-    margin-right: 25px;
-}
-
-.job-description {
-    margin-top: 20px;
-}
-
-.skills {
-    height: 65px;
-    margin: 15px 15px 0 0;
-}
-
-@media all and (max-width: 500px) {
-
-    .cv-content p {
-        font-size: 0.92em;
-    }
-
-    .job-description {
-        display: none;
-    }
-
-}
-
-@media all and (min-width: 501px) {
-
-    #cv {
-        padding: 0 70px;
-    }
-
-    #cv section {
-        margin-bottom: 50px;
-    }
-
-    .cv-content,
-    .co,
-    .skills {
-        float: left;
-    }
-
-    .co {
-        width: 90px;
-        margin-right: 25px;
-    }
-
-}
-
-ul#misc {
-    list-style: none;
-}
-
-ul#misc li {
-    position: relative;
-    margin-bottom: 12px;
-    letter-spacing: 0.1em;
-}
-
-ul#misc li:first-of-type {
-    margin-top: 25px;
-}
-
-ul#misc li::before {
-    content: url('http://www.julioaenlle.com/img/logo/list-style.png');
-    padding: 0 10px 0 0;
-    position: absolute;
-    top: -4px;
-    left: -35px;
-}
-
-/* --------------------------------------------------------------
->>> Contact Page
----------------------------------------------------------------- */
-
-#contact {
-    margin-bottom: 50px;
-}
-
-/* #contact h1 {
-    display: inline-block;
-    padding: 4px;
-    border-bottom: 6px solid rgb(255, 182, 54);
-} */
-
-#contact p,
-#contact a {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-#contact a {
-    color: #777777;
-}
-
-@media all and (max-width: 400px) {
-    .email-desktop {
-        display: none;
-    }
-}
-
-@media all and (min-width: 401px) {
-    .email-responsive {
-        display: none;
-    }
-}
-
-.relocate {
-    font-size: 0.9em !important;
-    font-weight: normal !important;
 }
