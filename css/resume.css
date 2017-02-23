@@ -30,6 +30,7 @@ This file contains styling for elemenets that appear on the resume page.
     line-height: 1.25em;
 }
 
+/*
 #cv a {
     text-decoration: none;
     font-size: 0.9em;
@@ -40,6 +41,7 @@ This file contains styling for elemenets that appear on the resume page.
     text-decoration: underline;
     color: rgb(255, 182, 54);
 }
+*/
 
 .cv-content,
 .co,
@@ -122,4 +124,22 @@ ul#misc li::before {
     position: absolute;
     top: -4px;
     left: -35px;
+}
+
+/* ----------------------------------------- Printable Résumé link --- */
+.printable-resume {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #777777;
+    padding: 6px 8px;
+    border: 6px solid rgb(255, 182, 54);
+}
+
+.printable-resume:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(255, 182, 54);
 }
