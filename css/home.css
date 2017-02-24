@@ -30,6 +30,10 @@ This file contains styling for elemenets that appear on the homepage.
     display: inline-block;
 }
 
+#homepage a {
+    text-decoration: none;
+}
+
 /* ----------------------------------------- Homepage images --- */
 .work-icon {
     width: 300px;
