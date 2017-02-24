@@ -10,79 +10,27 @@
     margin-bottom: 60px;
 }
 
-#work p {
-    padding: 0 45px;
+#work a {
+    text-decoration: none;
 }
 
-#work h1 {
-    font-size: 2.6em;
-    margin: 10px;
+/* ----------------------------------------- Project images --- */
+.project-thumbnail {
+    max-width: 450px;
+    float: left;
+    margin: 0 30px 45px;
 }
 
-#work h2 {
+.project-thumbnail img {
+    padding: 4px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.project-thumbnail p {
+    text-align: center;
+    font-weight: bold;
     font-size: 1.2em;
-    display: inline-block;
-    padding: 2px 0;
-
-    /* border-bottom: 4px solid rgba(197, 197, 197, 0.5); */
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-@media all and (min-width: 400px) {
-
-    #work h2 {
-        font-size: 1.3em;
-    }
-
-}
-
-@media all and (min-width: 530px) {
-
-    #work h2 {
-        font-size: 1.4em;
-    }
-}
-
-@media all and (max-width: 674px) {
-
-    .home-logo {
-        display: none;
-    }
-}
-
-@media all and (min-width: 675px) {
-
-    .home-logo {
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        margin-bottom: 10px;
-    }
-}
-
-
-/* --------------------------------------------------------------
->>> Work Grid
----------------------------------------------------------------- */
-
-ul#grid {
-    list-style: none;
-    padding-left: 0;
-}
-
-#grid li {
-    display: inline-block;
-    margin: 0 10px 25px;
-    padding: 12px;
-}
-
-#grid li:hover {
-    padding: 6px;
-    border: 6px solid rgb(255, 182, 54);
-}
-
-#grid img {
-    width: 200px;
-    border: 1px solid rgba(197, 197, 197, 0.5);
 }
