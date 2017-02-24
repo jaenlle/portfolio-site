@@ -12,33 +12,39 @@ This file contains styling for elemenets that appear on the homepage.
 
 #home {
     text-align: center;
-    margin: 0 33px 400px 33px;
+    margin: 0 33px;
+}
+
+.home-logo {
+    max-width: 300px;
 }
 
 .about {
+    font-size: 1.25em;
     text-align: justify;
+    line-height: 1.2em;
     clear: both;
 }
 
-p.about.mobile {
+#homepage {
+    display: inline-block;
+}
+
+/* ----------------------------------------- Homepage images --- */
+.work-icon {
+    width: 300px;
+    float: left;
     margin-bottom: 45px;
 }
 
-#code,
-#copy {
-    max-width: 483px;
-    display: block;
-    float: left;
+.work-icon img {
+    max-width: 250px;
+    display: inline-block;
+    margin: 0 auto;
 }
 
-#code figure,
-#copy figure {
-    max-width: 400px;
-}
-
-#code figcaption,
-#copy figcaption {
+.work-icon p {
     text-align: center;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }

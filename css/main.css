@@ -29,7 +29,9 @@ figcaption {
 }
 
 a {
+    text-decoration: none;
     cursor: crosshair;
+    color: #777777;
 }
 
 main {
@@ -78,7 +80,7 @@ header {
     nav,
     nav ul,
     nav li,
-    .mobile /* class for "head" image in mobile */ {
+    .viewable-on-fullscreen /* class for "head" image in mobile */ {
         display: none;
     }
 }
@@ -118,7 +120,7 @@ header {
         display: none;
     }
 
-    .full {
+    .viewable-on-mobile {
         display: none;
     }
 }
