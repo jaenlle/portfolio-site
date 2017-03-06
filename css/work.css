@@ -16,21 +16,50 @@
 
 /* ----------------------------------------- Project images --- */
 .project-thumbnail {
-    max-width: 450px;
-    float: left;
     margin: 0 30px 45px;
 }
 
 .project-thumbnail img {
     padding: 4px;
     border: 6px solid rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .project-thumbnail p {
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+.project-thumbnail img:hover {
+    border: 6px solid rgb(255, 182, 54);
+}
+
+@media all and (max-width: 400px) {
+
+    .project-thumbnail img {
+        max-width: 295px;
+    }
+}
+
+@media all and (min-width: 480px) {
+
+    .project-thumbnail {
+        float: left;
+    }
+
+    .project-thumbnail img {
+        display: block;
+        width: 400px;
+    }
+}
+
+/* ----------------------------------------- Project images --- */
+.under-construction {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
 }
