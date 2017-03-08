@@ -47,8 +47,15 @@ This file contains styling for elemenets that appear on the homepage.
     margin: 0 auto;
 }
 
+.work-icon h2,
 .work-icon p {
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
+}
+
+.work-icon h2 {
+    margin-bottom: 0;
+}
+
+.work-icon p {
+    margin-top: 0;
 }
