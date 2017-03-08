@@ -41,7 +41,7 @@ This file contains styling for elemenets that appear on the contact page.
     }
 }
 
-#relocate {
-    font-size: 0.9em !important;
-    font-weight: normal !important;
+#contact  p:last-of-type {
+    font-size: 0.9em;
+    font-weight: normal;
 }
