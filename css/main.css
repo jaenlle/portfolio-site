@@ -5,9 +5,18 @@
 This is the main CSS for the site and contains styling for elemenets that appear on every page.
 ---------------------------------------------------------------- */
 
+
+
 html,
 body {
     overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 body {
