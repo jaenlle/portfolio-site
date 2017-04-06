@@ -8,9 +8,6 @@ This file contains styling for elemenets that appear on the homepage.
 #home {
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#home {
     text-align: center;
     margin: 0 33px;
 }
@@ -27,14 +24,22 @@ This file contains styling for elemenets that appear on the homepage.
 }
 
 #homepage {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #homepage a {
     text-decoration: none;
 }
 
+.work-icon {
+    width: 250px;
+    margin: 0 50px;
+}
+
 /* ----------------------------------------- Homepage images --- */
+/*
 .work-icon {
     width: 300px;
     float: left;
@@ -59,3 +64,4 @@ This file contains styling for elemenets that appear on the homepage.
 .work-icon p {
     margin-top: 0;
 }
+*/

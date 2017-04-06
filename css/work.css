@@ -24,8 +24,15 @@
     border: 6px solid rgba(0, 0, 0, 0.1);
     display: block;
     margin: 0 auto;
-    max-width: 100%;
     height: auto;
+}
+
+.web {
+    max-width: 100%;
+}
+
+.copy {
+    max-width: 100%;
 }
 
 .project-thumbnail p {
@@ -38,6 +45,7 @@
     border: 6px solid rgb(255, 182, 54);
 }
 
+/*
 @media all and (max-width: 400px) {
 
     .project-thumbnail img {
@@ -53,13 +61,20 @@
 
     .project-thumbnail img {
         display: block;
-        width: 400px;
+        width: 423px;
     }
 }
+*/
 
 /* ----------------------------------------- Under Construction --- */
 .under-construction {
     display: block;
     margin: 0 auto;
     max-width: 200px;
+}
+
+/* ----------------------------------------- Flexbox --- */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
 }
