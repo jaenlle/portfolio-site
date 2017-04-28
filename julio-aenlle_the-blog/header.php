@@ -20,11 +20,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'julio-aenlle_the-blog' ); ?></a>
+<!-- <div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'julio-aenlle_the-blog' ); ?></a>-->
+
+<!-- Container start-->
+<div id="container">
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<!--<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -38,11 +41,18 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-		</div><!-- .site-branding -->
+		</div> .site-branding -->
+
+        <a href="/"><img class="head viewable-on-fullscreen" src="http://www.julioaenlle.com/img/headshot/headshot.png" alt="A picture of me, Julio Aenlle. Thank you for visiting my portfolio site." title="Lil Ol' Me!"></a>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'julio-aenlle_the-blog' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'julio-aenlle_the-blog' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>-->
+            <ul id="menu">
+                <li><a href="/">Work</a></li>
+                <li><a href="/resume.html">Résumé</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
