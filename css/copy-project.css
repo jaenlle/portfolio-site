@@ -9,14 +9,21 @@ This file contains styling for elemenets that appear on copy project pages.
     margin: 0 20px;
 }
 
+.items {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
 .bolded-text {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-p:nth-of-type(5) {
+p:nth-of-type(7) {
     margin-bottom: 60px;
-    border-bottom: 2px solid #777777;
+    border-bottom: 2px dashed #777777;
     padding-bottom: 30px;
 }
 
@@ -43,7 +50,7 @@ figcaption p {
 
 @media all and (min-width: 675px) {
 
-    p:nth-of-type(5) {
+    p:nth-of-type(7) {
         margin-bottom: 60px;
         border-bottom: none;
     }
