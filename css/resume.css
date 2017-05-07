@@ -10,7 +10,7 @@ This file contains styling for elemenets that appear on the resume page.
     margin-bottom: 35px;
 }
 
-#cv article {
+#cv section {
     display: block;
     margin-bottom: 40px;
 }
@@ -22,7 +22,7 @@ This file contains styling for elemenets that appear on the resume page.
     margin-bottom: 30px;
 }
 
-#cv section {
+#cv article {
     margin-bottom: 40px;
 }
 
