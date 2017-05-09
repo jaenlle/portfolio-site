@@ -105,7 +105,7 @@ This file contains styling for elemenets that appear on the resume page.
 }
 
 ul#misc {
-    list-style: none;
+    list-style: square;
 }
 
 ul#misc li {
@@ -118,6 +118,7 @@ ul#misc li:first-of-type {
     margin-top: 25px;
 }
 
+/*
 ul#misc li::before {
     content: url('http://www.julioaenlle.com/img/logo/list-style.png');
     padding: 0 10px 0 0;
@@ -125,6 +126,7 @@ ul#misc li::before {
     top: -4px;
     left: -35px;
 }
+*/
 
 /* ----------------------------------------- Printable Résumé link --- */
 .printable-resume {
