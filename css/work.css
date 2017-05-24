@@ -14,7 +14,12 @@
     text-decoration: none;
 }
 
-/* ----------------------------------------- Project images --- */
+#projects section {
+    display: block;
+    clear: all;
+}
+
+/* ----------------------------------------- Web Design Project Landing Page --- */
 .project-thumbnail {
     margin: 0 30px 45px;
 }
@@ -65,6 +70,19 @@
     }
 }
 */
+
+/* ----------------------------------------- Copy Project Landing Page --- */
+.copy-title {
+    width: 100%;
+    text-align: left;
+}
+
+.copy-title p {
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+
 
 /* ----------------------------------------- Under Construction --- */
 .under-construction {
